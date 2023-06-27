@@ -39,7 +39,5 @@ guillaume@ubuntu:~/0x00$ ./0-main.py
 guillaume@ubuntu:~/0x00$ 
 ```
 
-```
-By
-```
+```By```
 **Auwal Abdulmalik - [Amkeez](https://github.com/Amkeez252)**
