@@ -6,4 +6,5 @@
 * [minimum_operations](https://github.com/Amkeez252/alx-interview/tree/master/0x02-minimum_operations)
 * [Log Parsing](https://github.com/Amkeez252/alx-interview/tree/master/0x03-log_parsing)
 * [UTF-8 Validation](https://github.com/Amkeez252/alx-interview/tree/master/0x04-utf8_validation)
+* [N Queens](https://github.com/Amkeez252/alx-interview/tree/master/0x05-nqueens)
 
