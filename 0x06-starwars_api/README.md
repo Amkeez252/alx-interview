@@ -35,7 +35,7 @@ Write a script that prints all characters of a Star Wars movie:
 
 * The first positional argument passed is the Movie ID - example: `3 =` “Return of the Jedi”
 * Display one character name per line **in the same order as the “characters” list in the** `/films/` endpoint
-* You must use the `Star wars API`
+* You must use the [Star wars API](https://swapi-api.alx-tools.com/)
 * You must use the `request` module
 ```
 alexa@ubuntu:~/0x06$ ./0-starwars_characters.js 3
@@ -62,4 +62,4 @@ Bib Fortuna
 alexa@ubuntu:~/0x06$
 ```
 
-``BY Auwal Abdulmalik`` - {Amkeez](https://github.com/Amkeez252)
+``BY Auwal Abdulmalik`` - [Amkeez](https://github.com/Amkeez252)
