@@ -8,4 +8,4 @@
 * [UTF-8 Validation](https://github.com/Amkeez252/alx-interview/tree/master/0x04-utf8_validation)
 * [N Queens](https://github.com/Amkeez252/alx-interview/tree/master/0x05-nqueens)
 * [Star Wars API](https://github.com/Amkeez252/alx-interview/tree/master/0x06-starwars_api)
-
+* [Rotate 2D Matrix](https://github.com/Amkeez252/alx-interview/tree/master/0x07-rotate_2d_matrix)
