@@ -10,7 +10,7 @@ def rotate_2d_matrix(matrix):
         matrix (list): A 2D matrix. A list of lists
 
     Returns:
-        northing
+        nothing
     """
     length = len(matrix)
 
@@ -18,6 +18,8 @@ def rotate_2d_matrix(matrix):
         for j in range(i, length):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
+
     # Reverse the matrix
+    
     for i in range(length):
         matrix[i] = matrix[i][::-1]
