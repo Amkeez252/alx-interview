@@ -3,8 +3,6 @@
 
 
 def rotate_2d_matrix(matrix):
-    """2D matrix, rotate it 90 degrees clockwise and Returns: Nothing.
-    """
     net = len(matrix)
 
     for i in range(net):
