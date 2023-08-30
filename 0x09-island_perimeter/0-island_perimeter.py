@@ -1,26 +1,33 @@
 #!/usr/bin/python3
 """Island Perimeter."""
 
+from typing import List
 
-def island_perimeter(grid):
+
+def island_perimeter(grid: List) -> int:
+    """
+    Island perimeter.
+
+    Args:
+        grid (list): list of cells
+    Returns:
+        Returns int, the number of the perimeter.
+    """
     if not grid:
         return 0
 
-    perimeter = 0
-    rows = len(grid)
-    cols = len(grid[0])
+    perimeter: int = 0
+    rows, cols = len(grid), len(grid[0])
 
-    for i in range(rows):
-        for j in range(cols):
-            if grid[i][j] == 1:
-                perimeter += 4  # Each land cell contributes 4 to perimeter
+    for row in range(rows):
+        for col in range(cols):
+            if grid[row][col] == 1:
+                perimeter += 4
 
-                # Check left neighbor
-                if j > 0 and grid[i][j - 1] == 1:
-                    perimeter -= 2  # Deduct 2 for each adjacent land cell
-
-                # Check top neighbor
-                if i > 0 and grid[i - 1][j] == 1:
-                    perimeter -= 2  # Deduct 2 for each adjacent land cell
+                # Check neighboring cells to subtract shared sides
+                if row > 0 and grid[row - 1][col] == 1:
+                    perimeter -= 2
+                if col > 0 and grid[row][col - 1] == 1:
+                    perimeter -= 2
 
     return perimeter
