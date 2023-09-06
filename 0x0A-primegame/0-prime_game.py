@@ -1,32 +1,32 @@
 #!/usr/bin/python3
 """ Prime Game """
 
-def isWinner(x, nums):
-    def sieve(n):
-        primes = []
-        sieve = [True] * (n + 1)
-        for p in range(2, n + 1):
-            if sieve[p]:
-                primes.append(p)
-                for i in range(p * p, n + 1, p):
-                    sieve[i] = False
-        return primes
 
-    def canWin(n, primes):
-        if n in primes:
+def isWinner(x, nums):
+    def is_prime(num):
+        if num <= 1:
+            return False
+        if num == 2:
             return True
-        for prime in primes:
-            if n % prime == 0:
-                return True
-        return False
+        if num % 2 == 0:
+            return False
+        for i in range(3, int(num ** 0.5) + 1, 2):
+            if num % i == 0:
+                return False
+        return True
+
+    def can_win(n):
+        if n == 1:
+            return False
+        if n % 2 == 0:
+            return True
+        return not is_prime(n)
 
     maria_wins = 0
     ben_wins = 0
 
-    primes = sieve(max(max(nums), 10000))
-
     for n in nums:
-        if canWin(n, primes):
+        if can_win(n):
             maria_wins += 1
         else:
             ben_wins += 1
@@ -37,4 +37,3 @@ def isWinner(x, nums):
         return "Ben"
     else:
         return None
-
